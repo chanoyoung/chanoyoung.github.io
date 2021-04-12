@@ -365,19 +365,21 @@
         max-width: 100%;
         height: auto;
         transition: all 0.2s ease-in-out;
+        -webkit-filter: grayscale(80%);
+        filter: grayscale(80%);
       }
 
       a {
         font-weight: normal;
-        color: $primaryDark;
+        color: rgba(0, 0, 0, 0.5);
         text-decoration: none;
         transition: all 0.3s;
 
         &:hover {
-          color: rgba(0, 0, 0, 0.5);
+          color: $primaryDark;
           img {
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+            -webkit-filter: none;
+            filter: none;
           }
         }
       }
@@ -576,12 +578,13 @@
 
     &:hover {
       .title {
-        color: rgba(255, 255, 255, 0.5);
+        color: #fff;
       }
 
+      .image,
       .image > img {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
+        -webkit-filter: none;
+        filter: none;
       }
     }
 
@@ -591,11 +594,13 @@
       width: 100%;
       max-width: rem(200px);
       transition: all 0.3s;
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%);
     }
 
     .title {
       font-size: rem(16px);
-      color: #fff;
+      color: rgba(255, 255, 255, 0.5);
       margin: rem(5px) 0;
       transition: all 0.3s;
       @include media(">=sm") {
