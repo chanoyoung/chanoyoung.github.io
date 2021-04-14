@@ -20,7 +20,7 @@
   }
 
   .pixels {
-    opacity: 0.8;
+    opacity: 0.5;
     background-image: url(../../assets/img/pixels.png);
   }
 
@@ -42,14 +42,15 @@
     }
 
     .date {
-      font-size: rem(16px);
-      color: rgba(255, 255, 255, 0.75);
+      font-size: rem(20px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
     }
 
     .title {
       font-size: rem(40px);
       color: #fff;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
       margin: rem(10px) 0;
 
       @include media(">=sm") {
@@ -60,7 +61,7 @@
     .description {
       font-size: rem(24px);
       color: #fff;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
       margin: 0;
 
       @include media(">=sm") {
