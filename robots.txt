@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://chanoyoung.github.io/sitemap.xml
